@@ -148,8 +148,8 @@ def predict_image(name):
     if(a == 0):
         temp = "Cataract"
     else:
-        temp = "normal"
-    return temp
+        temp = "Normal"
+    return render_template("output.html", temp=temp)
 
 
 if __name__ == "__main__":
