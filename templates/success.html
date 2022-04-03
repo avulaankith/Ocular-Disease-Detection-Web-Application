@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+{% block title %} About {% endblock title %}
+{% block body %}
+    <p>File uploaded successfully</p>  
+    <p>File Name: {{name}}</p>  
+
+    
+    <a href="/predict_image/{{ name }}"><button class="btn btn-success">Go to the prediction</button></a>
+{% endblock body %}

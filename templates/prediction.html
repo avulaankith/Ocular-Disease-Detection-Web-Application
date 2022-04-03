@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prediction Form</title>
+    <link rel="stylesheet" href="{{url_for('static', filename='css/Prediction.css')}}">
+</head>
+<body>
+    <div class="container">
+    <form action="" method="get">
+        <h1 class="main_heading">Prediction Form</h1>
+        <p>Required Fileds are followed by *</p>
+        <h3>Contact Information</h3>
+        <p>Name: * <input type="text" name="name" id="name" required placeholder="Oom Pandey"></p>
+        <p>       
+            <fieldset>
+            <legend> Gender: * </legend>
+            Male <input type="radio" name="gender" id="male" required>
+            Female <input type="radio" name="gender" id="male" required>
+            </fieldset>
+        </p>
+
+        <p>Date of Birth: * <input type="date" name="name" id="name" required placeholder="Oom Pandey"></p>
+
+        <p>Address: <textarea name="address" id="" cols="100" rows="8" placeholder="Enter your Address"></textarea></p>
+
+        <p>Email: * <input type="email" name="email" id="email" required placeholder="pandey@gmail.com"></p>
+        <p>Pincode: * <input type="number" name="pincode" id="pincode" required placeholder="500087"></p>
+        <h3>Prediction</h3>
+        <form id="upload-file" method="post" enctype="multipart/form-data">
+            <label for="imageUpload" class="upload-label">
+                Choose...
+            </label>
+            <input type="file" name="file" id="imageUpload" accept=".png, .jpg, .jpeg">
+        </form>
+    
+        <div class="image-section" style="display:none;">
+            <div class="img-preview">
+                <div id="imagePreview">
+                </div>
+            </div>
+            <div>
+                <button type="button" class="btn btn-primary btn-lg " id="btn-predict">Predict!</button>
+            </div>
+        </div>
+        
+        <input type="submit" value="Predict">
+    </form>
+</div>
+</body>
+</html>
