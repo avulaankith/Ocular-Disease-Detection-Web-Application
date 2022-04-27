@@ -1,6 +1,18 @@
 {% extends 'base.html' %}
 {% block title %} Prediction form {% endblock title %}
 {% block body %}
-    <h1>The prediction for given fundus image is:</h1>
+<div class="container">
+    <div class="row">
+      <div class="col-md-8">
+    <h1 class="text-dark display-4 mt-100">The prediction for given fundus image is:</h1>
+    <div class="col-md-4">
+        <div class="card mt-100">
+          <div class="card-body">
     <h2>{{ temp }}</h2>
+    </div>
+        </div>
+        </div>
+    </div>
+</div>
+
 {% endblock body %}

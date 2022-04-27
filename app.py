@@ -17,6 +17,7 @@ ALLOWED_EXTENSIONS = {'txt', 'pdf', 'png',
                       'jpg', 'jpeg', 'gif', 'zip', 'csv', 'png'}
 
 app = Flask(__name__)
+app.config['SECRET_KEY'] = "Your_secret_string"
 app.config['SQLALCHEMY_DATABASE_URI'] = "sqlite:///todo.db"
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 db = SQLAlchemy(app)

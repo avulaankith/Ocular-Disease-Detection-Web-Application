@@ -8,6 +8,7 @@
   list-style-type: none;
   font-family: "Cormorant Garamond", serif;
   font-weight: 400;
+  font-family: sans-serif;
 }
 
 html {
@@ -84,6 +85,8 @@ body {
 .navbar-link {
   
   width: 15rem;
+  font-size: 1.5rem;
+  /* letter-spacing: 0rem; */
   padding: 1.5rem 0;
   text-align: center;
   margin: 2rem 1rem;
@@ -143,7 +146,7 @@ section.change {
 }
 
 .section-heading {
-  font-size: 5rem;
+  font-size: 4rem;
   font-weight: bolder;
   color: #fff;
   margin-bottom: 10rem;
@@ -183,6 +186,12 @@ section.change {
   left: 120rem;
   top: -1.5rem;
   overflow: hidden;
+  z-index: 10;
+}
+
+.navbar-btn a{
+  color: white;
+  font-size: 15px;
 }
 
 .navbar-btn span{
@@ -305,6 +314,7 @@ section.change {
   width: 24vw;
   height: 15vw;
   object-fit: cover;
+  object-position: center top;
   box-shadow: 
   0.3rem 0.3rem 0.1rem #e92929, 
   0.5rem 0.5rem 0.1rem #a2e946,
@@ -313,10 +323,27 @@ section.change {
   transition: all 0.5s;
 }
 
+.photo-2{
+  object-position: top;
+}
+
+.photo-3{
+  object-position: top;
+}
+
+.photo-4{
+  object-position: center;
+}
+
+.photo-6{
+  object-position: top;
+}
+
 .team-link:hover .member-img{
   width: 24vw;
   height: 15vw;
   object-fit: cover;
+  object-position: center top;
   box-shadow: 
   1rem 1rem 0.1rem #e92929, 
   2rem 2rem 0.1rem #a2e946,
@@ -326,6 +353,24 @@ section.change {
   opacity: 0.5;
   transform: scale(1.1);
 }
+
+.team-link:hover .photo-2{
+  object-position: top;
+}
+
+.team-link:hover .photo-3{
+  object-position: top;
+}
+
+.team-link:hover .photo-4{
+  object-position: center;
+}
+
+.team-link:hover .photo-6{
+  object-position: top;
+}
+
+
 
 .member-name{
   position: absolute;
