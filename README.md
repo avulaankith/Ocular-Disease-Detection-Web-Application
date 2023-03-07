@@ -2,7 +2,7 @@
 
 Project Design Practice Project
 
-The project is to create a web application for user dashboard and cataract prediction. The application is made in Flask. We took the cataract dataset from kaggle.
+The project is to create a web application for user dashboard and cataract prediction. The application is made in Flask. We took the Ocular disease detection dataset from kaggle. Where we filtered data having cataract positive. 
 
 Link for the dataset:
 [Link](https://www.kaggle.com/datasets/andrewmvd/ocular-disease-recognition-odir5k)
