@@ -46,7 +46,7 @@ Access the application by navigating to ```http://localhost:5000``` using a web 
 
 ## Contributing
 
-Contributions to this project are welcomed. If you wish to contribute, please follow the guidelines outlined in the CONTRIBUTING.md file.
+Contributions to this project are welcomed. If you wish to contribute, please follow the guidelines outlined in the [CONTRIBUTING.md](CONTRIBUTING.md) file.
 
 ## Issues
 
