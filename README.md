@@ -1,4 +1,5 @@
-# PDP - Project Design Practice Project
+# Ocular-Disease-Detection-Web-Application
+### Done as a part of PDP - Project Design Practice Project
 
 ## Overview
 
